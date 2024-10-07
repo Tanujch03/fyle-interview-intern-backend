@@ -39,6 +39,7 @@ pip install -r requirements.txt
 
 ```
 export FLASK_APP=core/server.py
+# if store.sqlite3 already exists run this command
 rm core/store.sqlite3
 flask db upgrade -d core/migrations/
 ```
